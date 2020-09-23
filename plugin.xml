@@ -14,12 +14,12 @@
 
   <!-- android -->
   <platform name="android">
-    <js-module src="www/permissions.js" name="Permissions">
+    <js-module src="www/permissions.js" name="Notification">
       <clobbers target="cordova.plugins.notification" />
     </js-module>
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Permissions">
+      <feature name="Notification">
         <param name="android-package" value="com.notification.Notification" />
       </feature>
     </config-file>
@@ -29,14 +29,14 @@
 
   <!-- browser -->
   <platform name="browser">
-    <js-module src="www/permissions-dummy.js" name="Permissions">
+    <js-module src="www/permissions-dummy.js" name="Notification">
       <clobbers target="cordova.plugins.notification" />
     </js-module>
   </platform>
 
   <!-- ios -->
   <platform name="ios">
-    <js-module src="www/permissions-dummy.js" name="Permissions">
+    <js-module src="www/permissions-dummy.js" name="Notification">
       <clobbers target="cordova.plugins.notification" />
     </js-module>
   </platform>
