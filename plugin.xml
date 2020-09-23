@@ -2,9 +2,9 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-android-permissions-plus" version="1.1.0">
 
-  <name>Permissions</name>
+  <name>Notification</name>
 
-  <description>Android permissions support library.</description>
+  <description>Android Notification support library.</description>
 
   <author>Jason Yang/longting</author>
 
@@ -20,11 +20,11 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Permissions">
-        <param name="android-package" value="com.notification.Permissions" />
+        <param name="android-package" value="com.notification.Notification" />
       </feature>
     </config-file>
 
-    <source-file src="src/android/com/android/plugins/Permissions.java" target-dir="src/com/notification"/>
+    <source-file src="src/android/Notification.java" target-dir="src/com/notification"/>
   </platform>
 
   <!-- browser -->

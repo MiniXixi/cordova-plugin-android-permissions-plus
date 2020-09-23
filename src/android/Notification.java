@@ -17,7 +17,7 @@ import org.json.JSONObject;
 /**
  * Created by JasonYang on 2016/3/11.
  */
-public class Permissions extends CordovaPlugin {
+public class Notification extends CordovaPlugin {
 
     private static final String ACTION_CHECK_PERMISSION = "checkPermissions";
     private static final String ACTION_REQUEST_PERMISSION = "requestPermission";
